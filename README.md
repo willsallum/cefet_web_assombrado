@@ -9,6 +9,10 @@ Você deve fazer algumas partes que faltam do blog assombrado.
 
 ![O resultado final da prática exibindo a página do Blog Assombrado](imgs/statement/resultado.webp)
 
+[Baixe as imagens e as páginas][seminal-code] que serão usados.
+
+[seminal-code]: https://github.com/willsallum/cefet_web_assombrado/archive/master1.zip
+
 
 ## Exercício 0: encurtar a duração do vídeo
 
