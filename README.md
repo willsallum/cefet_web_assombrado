@@ -290,4 +290,4 @@ rolagem. Isso pode ser feito facilmente com o posicionamento `sticky`.
 [pseudo-coisas]: https://willsallum.github.io/cefet_web/classes/html4/#pseudo-classes-e-pseudo-elements
 [propriedade-position]: https://willsallum.github.io/cefet_web/classes/css2/#limita%C3%A7%C3%B5es-do-fluxo-padr%C3%A3o
 [slides-box-model]: https://willsallum.github.io/cefet_web/classes/html4/#o-box-model
-[entrada-e-botoes]: https://willsallum.github.io/cefet_web/classes/html4/#elementos-de-entrada-e-botoes
+[entrada-e-botoes]: https://github.com/willsallum/cefet_web/tree/main/classes/html4#intera%C3%A7%C3%A3o-livre-com-usu%C3%A1rio
