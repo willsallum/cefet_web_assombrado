@@ -11,7 +11,7 @@ Você deve fazer algumas partes que faltam do blog assombrado.
 
 [Baixe as imagens e as páginas][seminal-code] que serão usados.
 
-[seminal-code]: https://github.com/willsallum/cefet_web_assombrado/archive/master1.zip
+[seminal-code]: https://github.com/willsallum/cefet_web_assombrado/tree/main/archive
 
 
 ## Exercício 0: encurtar a duração do vídeo
