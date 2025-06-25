@@ -11,7 +11,7 @@ Você deve fazer algumas partes que faltam do blog assombrado.
 
 [Baixe as imagens e as páginas][seminal-code] que serão usados.
 
-[seminal-code]: https://github.com/willsallum/cefet_web_assombrado/archive/master1.zip
+[seminal-code]: https://github.com/willsallum/cefet_web_assombrado/tree/main/archive
 
 
 ## Exercício 0: encurtar a duração do vídeo
@@ -284,10 +284,10 @@ rolagem. Isso pode ser feito facilmente com o posicionamento `sticky`.
            ```
 
 
-[tags-semanticas]: https://willsallum.github.io/cefet_web/classes/html4/#elementos-semanticos
-[lista-horizontal]: https://willsallum.github.io/cefet_web/classes/html4/#transformando-lista-em-menu
+[tags-semanticas]: https://willsallum.github.io/cefet_web/classes/html4/#elementos-sem%C3%A2nticos-13
+[lista-horizontal]: https://willsallum.github.io/cefet_web/classes/html4/#transformando-uma-lista-em-um-menu
 [propriedade-display]: https://willsallum.github.io/cefet_web/classes/css2/#a-propriedade-display
 [pseudo-coisas]: https://willsallum.github.io/cefet_web/classes/html4/#pseudo-classes-e-pseudo-elements
-[propriedade-position]: https://willsallum.github.io/cefet_web/classes/css2/#valores-position
+[propriedade-position]: https://willsallum.github.io/cefet_web/classes/css2/#limita%C3%A7%C3%B5es-do-fluxo-padr%C3%A3o
 [slides-box-model]: https://willsallum.github.io/cefet_web/classes/html4/#o-box-model
-[entrada-e-botoes]: https://willsallum.github.io/cefet_web/classes/html4/#elementos-de-entrada-e-botoes
+[entrada-e-botoes]: https://willsallum.github.io/cefet_web/classes/html4#intera%C3%A7%C3%A3o-livre-com-usu%C3%A1rio
