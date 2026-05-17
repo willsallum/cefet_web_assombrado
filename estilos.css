@@ -33,14 +33,22 @@ h1 + h2 {
 }
 
 header ul {
+  padding-left: 0;
+  padding-top: 0.25em;
+  margin-bottom: 0;
   background-color: rgba(0, 204, 147, 0.53);
-  display: flex;
-  justify-content:space-around
 }
 
-header ul li {
-  align-self: center;
-  list-style: none; 
+header li {
+  list-style: none;
+  display: inline-block;
+  font-family: "Special Elite", cursive;
+  border-bottom: 3px solid transparent;
+  margin: 0 1em;
+}
+
+header li:hover {
+  border-bottom-color: currentColor;
 }
 
 header a {
@@ -48,9 +56,14 @@ header a {
   text-shadow: 1px 1px black;
 }
 
-header > h1::selection, header > h2::selection, #tags::selection {
-  background-color: white;
-  color: black;
+header::selection,
+header ::selection,
+footer::selection,
+footer ::selection,
+#tags::selection,
+#tags ::selection {
+  color: white;
+  background-color: hotpink;
 }
 
 a:link {
@@ -62,7 +75,7 @@ a:visited {
 }
 
 a:hover {
-  color: white;
+  /*color: white;*/
 }
 
 a:active {
@@ -91,7 +104,7 @@ main {
   display: inline-block;
 }
 
-#posts-principais .post titulo {
+#posts-principais .post .titulo {
   text-shadow: 1px 1px black;
 }
 
@@ -130,12 +143,11 @@ main {
 }
 
 .novidade::before {
-  content: "Novidade! ";
-  color:rgba(0, 204, 147, 0.53);
-  background-color: darkgreen;
-  border-radius: 5px;
-  margin-right: 15px;
-  padding-left: 10px;
+  content: "Novidade!";
+  color: white;
+  background-color: forestgreen;
+  padding: 0.25em;
+  border-radius: 0.25em;
 }
 
 #tags {
@@ -186,11 +198,6 @@ footer .texto-rodape {
   width: calc(100% - 215px - 2em - 2em);
   margin-left: 1em;
   vertical-align: top;
-}
-
-footer > p::selection, footer > p ::selection {
-  background-color: #ecf025;
-  color: rgb(63, 13, 216);
 }
 
 .backdrop {
@@ -258,4 +265,18 @@ footer > p::selection, footer > p ::selection {
   color: black;
   border-color: currentColor;
   box-shadow: none;
+}
+
+
+#voltar-topo {
+  background-color: white;
+  border-radius: 20%;
+  border: 2px solid silver;
+  font-size: 35px;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
