@@ -1,87 +1,22 @@
-# Blog Assombrado 👻
+# Blog Assombrado
 
-Um blog sobre o desconhecido.
+Um blog sobre o desconhecido **versão 2**. Baixe o [código seminal][seminal].
+
+[seminal]: https://github.com/fegemo/cefet-front-end-assombrado/archive/main-positioning.zip
 
 
 ## Atividade
 
-Você deve fazer algumas partes que faltam do blog assombrado.
+Você deve fazer mais algumas adaptações no blog assombrado e o resultado
+final pode ser visto a seguir. Nosso objetivo é treinar o uso da propriedade
+`position`, das propriedades `top, right, bottom, left` e `z-index`.
 
-![O resultado final da prática exibindo a página do Blog Assombrado](imgs/statement/resultado.webp)
+![O resultado final da prática](resultado.png)
 
-[Baixe as imagens e as páginas][seminal-code] que serão usados.
+Lembre-se de reduzir a duração do vídeo para agilizar o seu exercício
+(vide [FAQ](#faq)).
 
-[seminal-code]: https://github.com/willsallum/cefet_web_assombrado/raw/refs/heads/main/master.zip
-
-
-## Exercício 0: encurtar a duração do vídeo
-
-Abra a página no navegador. Assista uma vinheta bem legal. Faça isso duas vezes,
-e tudo ainda estará bem. A partir da terceira, aguardar os 11s do vídeo
-terminar passa a ser a pior coisa do mundo.
-
-Portanto, veja no [FAQ](#faq) como fazer o vídeo desaparecer mais rapidamente.
-
-
-## Exercício 1: _tags_ semânticas
-
-Converta as `<div>` e `<span>` nas _tags_ semânticas mais adequadas,
-**se houver**.
-
-- **Pode ser que não exista uma _tag_ semântica** em alguns casos - aí
-  continua sendo `<div>` ou `<span>` mesmo
-- Veja as [_tags_ semânticas nos slides][tags-semanticas]
-
-**Atenção**: ao alterar o HTML (mudar uma tag para outra, mudar ou tirar
-uma `class` ou um `id`), deve-se verificar se são necessárias alterações nos
-arquivos CSS e em códigos JavaScript.
-
-Por exemplo, se você tirar o `id` da `<div id="cabecalho">...</div>`,
-faça uma busca por `#cabecalho` no arquivo CSS para verificar se precisa alterá-lo
-de forma que os estilos continuem se aplicando mesmo depois da alteração.
-
-
-## Exercício 2: menu horizontal
-
-Torne horizontal a lista com o menu principal. Faça de forma que o menu
-fique semelhante ao da imagem final (lá em cima). Veja como
-[transformar uma lista não ordenada em uma lista horizontal][lista-horizontal].
-
-Você vai precisar usar a propriedade `display`.
-[Veja como nos slides][propriedade-display].
-
-
-## Exercício 3: tamanho da seção de _tags_
-
-Para treinar o conceito de _box model_ ([slides][slides-box-model]),
-você deve corrigir o fato do elemento que contém as _tags_ estar
-maior do que deveria. No total, deveria ser `300px` de largura, mas
-ele ficou com mais e, como efeito indesejado, uma "coluna preta" apareceu à direita (a imagem de fundo terminou e não repete).
-
-Consulte o _box model_ do elemento `#tags` e proponha uma alteração
-em seu CSS que o corrija, sem alterar nada sobre a imagem de fundo.
-
-![A seção de tags da página mostrando uma imagem de fundo ocupando quase todo espaço na horizontal, exceto por uma coluna preta à direita](imgs/statement/tags-com-erro.webp)
-![A mesma seção de tags, só que com a largura menor - o suficiente para ter o mesmo tamanho da imagem de fundo](imgs/statement/tags-corrigido.webp)
-
-
-## Exercício 4: Formulário de "Inscreva-se!"
-
-No rodapé, dentro de `#inscreva-se`, crie elementos HTML simulando um
-formulário de inscrição. Deve ter um título (`h3`) "Inscreva-se!", além
-de campos de entrada com seus rótulos:
-
-1. Campo (e rótulo) para "Nome"
-1. Idem para "E-mail"
-1. Idem para "Aceito receber promoções" (✅)
-1. Botão "Inscrever" (que não fará nada)
-
-![Imagem de como o rodapé deve ficar mostrando os campos para o usuário se inscrever](imgs/statement/rodape.webp)
-
-Lembre-se dos [elementos de entrada e botões][entrada-e-botoes] nos slides.
-
-
-## Exercício 5: _tags_ parecendo botões
+## Exercício 1: _tags_ parecendo botões
 
 Estilize as _tags_ que ficam na nuvem de _tags_ (elemento `#tags`) de
 forma que, ao serem clicadas¹, elas sejam **deslocadas** `2px` para
@@ -92,7 +27,7 @@ originalmente posicionadas.
   para decidir se neste caso deve ser usado `static`, `relative`, `absolute`
   ou `fixed`.
 
-![Vídeo mostrando um usuário clicando nas tags e elas sendo levemente deslocadas durante o click](https://willsallum.github.io/cefet_front_end_large_assets/webp/assombrado-tags-como-botoes.webp)
+![](imgs/tags-como-botoes.gif)
 
 
 Além de alterar a posição das _tags_ quando clicadas, altere também o
@@ -122,53 +57,45 @@ a:active {
 Repare que **é possível usar `:active`** não apenas nas _tags_
 `<a>...</a>` (de hiperlinks), mas **em qualquer elemento**.
 
-
-## Exercício 6: "Novidade!"
-
-Usando **pseudo-elementos** ([slides][pseudo-coisas]), faça com que toda
-postagem que possui a classe `.novidade` tenha o texto "Novidade!"
-imediatamente antes do seu conteúdo (como na imagem lá em cima). Use
-sua criatividade para estilizar de uma forma bonita e legal.
-
-
-## Exercício 7: títulos em cima das imagens
+## Exercício 2: títulos em cima das imagens
 
 Na seção das principais postagens (elemento `#posts-principais`),
 estilize cada `<article class="post">...</article>` de forma que o
-título da postagem sobreponha a imagem, em vez de ficar
+título da postagem fique sobreponha a imagem, em vez de ficar
 abaixo. Além da posição, coloque um fundo semitransparente (tipo
 `background-color: rgba(255, 255, 255, 0.5);`) para tornar legível.
 
-![Imagem de uma postagem com o título acima da imagem, ancorado na parte de cima, com um fundo branco semitransparente](imgs/statement/titulos-nas-imagens.png)
+![](imgs/titulos-nas-imagens.png)
 
 
-OPCIONAL: Em vez de ter o título sempre visível, faça com que o texto apareça
-apenas quando o mouse estiver em cima do `.post`, como no vídeo
-a seguir:
+## Exercício 3: botão "voltar ao topo" ↑
 
-Como eu fiz:
+Ao final do `<main>...</main>` (a última coisa dentro dele), (a) crie
+um hiperlink (`<a>...</a>`) com atributo `href="#topo-da-pagina"`
+(que é o `id` que o professor colocou no `<header></header>`) e
+coloque, dentro do elemento `<a></a>`, apenas esta setinha: ↑ (copie
+aqui e cole lá).
 
-- Os títulos (`.titulo`) dentro de `.post` que está nesta seção
-  (`#posts-principais`) possuem:
-  - `top: 20px`
-  - `opacity: 0`  
-- Quando o `.post` está em `:hover`, o `.titulo` tem:
-  - `top: 6px`
-  - `opacity: 1`
+Após criar o elemento e ver que ele apareceu na página, você deve
+estilizá-lo. Primeiramente, (b) coloque um `id` nele com o nome
+`voltar-topo`. Fazendo isso, o hiperlink já vai ficar com fundo branco,
+setinha alaranjada e borda, porque já existe uma regra CSS estilizando
+alguém que tenha esse `id`. Logo, fica **faltando apenas você definir
+o posicionamento e suas coordenadas**.
 
-Por fim, é possível fazer com que a `opacity` e o `top` variem
-lentamente entre (`0` e `1`) e (`20px` a `6px`), em vez de trocar
-o valor instantaneamente. Veja
-no [FAQ como configurar uma transição](#faq).
+Quando a página rolar, o (c) botão deve permanecer sempre a `15px`
+de distância à direita e abaixo em relação à janela, e não à página
+(_i.e._, ele nunca sai do lugar, mesmo quando o usuário rolar a
+barra de rolagem).
 
-![Vídeo mostrando um usuário passando o mouse acima de uma postagem e o título aparecendo com uma transição](https://willsallum.github.io/cefet_front_end_large_assets/webp/assombrado-titulos-nas-imagens.webp)
+![](imgs/botao-voltar-ao-topo.png)
 
 
-## Exercício 8: fantasmas **Boo**
+## Desafio 1: fantasmas **Boo**
 
-![Fantasimnha com fome](imgs/boo1.gif)
-![Fantasminha com a boca aberta](imgs/boo2.gif)
-![Fantasminha com a língua pra fora](imgs/boo3.gif)
+![](imgs/boo1.gif)
+![](imgs/boo2.gif)
+![](imgs/boo3.gif)
 
 Coloque alguns (por exemplo, 3) _boos_ do Super Mario para assombrar
 a página, ao final do `<main></main>` (logo antes da tag de
@@ -187,15 +114,13 @@ Há três imagens na pasta `imgs`:
 Use a propriedade `opacity` com um valor próximo de 0 (é sempre entre 0 e 1)
 para deixar os _boos_ semitransparentes. Quando o mouse passar sobre²
 um deles, ele deve ficar opaco (`opacity: 1;`). Afinal, é isso que
-fantasmas fazem. Alternativamente, você pode fazer o contrário e deixar
-os _boos_ quase invisíveis e, só quando passamos o mouse por cima é que
-aparecem.
+fantasmas fazem.
 
 Se quiser, você pode alterar seu tamanho (coloquei `width: 40px` nos meus)
 e também invertê-los horizontalmente para fazê-los olharem para a esquerda
 (veja o [FAQ](#faq)).
 
-Ao terminar de estilizá-los, coloque uma classe
+**OPCIONAL**: ao terminar de estilizá-los, coloque uma classe
 `boo` em cada uma dessas imagens (a classe tem que ter esse nome, exatamente),
 então, inclua o arquivo `boos.js` na página. Veja
 [como incluir um arquivo JavaScript no FAQ](#faq).
@@ -206,19 +131,42 @@ Lembre-se da pseudo-classe `:hover` que costumamos usar para _links_ mas
 podemos usar para estilizar qualquer elemento no momento em que o mouse
 paira sobre ele.
 
+## Desafio 2: título visível apenas no `:hover`
 
-## Exercício 9: "nuvem de _tags_" grudenta
+Em vez de ter o título sempre visível, faça com que o texto apareça
+apenas quando o mouse estiver em cima do `article.post`, como no vídeo
+a seguir:
+
+![](imgs/titulos-nas-imagens.gif)
+
+Como eu fiz:
+
+- Os títulos (`.titulo`) dentro de `.post` que está nesta seção
+  (`#posts-principais`) possuem:
+  - `top: 20px`
+  - `opacity: 0`  
+- Quando o `.post` está em `:hover`, o `.titulo` tem:
+  - `top: 6px`
+  - `opacity: 1`
+
+Por fim, é possível fazer com que a `opacity` e o `top` variem
+lentamente entre (`0` e `1`) e (`20px` a `6px`), em vez de trocar
+o valor instantaneamente. Veja
+no [FAQ como configurar uma transição](#faq).
+
+
+## Desafio 3: "nuvem de _tags_" grudenta
 
 Existe um outro valor para a propriedade `position` chamado `sticky`
 (grudento). A ideia é não deixar que alguns elementos "saiam de vista"
 quando a página é rolada para baixo.
 
-![Vídeo mostrando usuário rolar a página para baixo e a nuvem de tags grudando no topo da página](https://willsallum.github.io/cefet_front_end_large_assets/webp/assombrado-nuvem-sticky.webp)
+![](imgs/nuvem-sticky.gif)
 
 Neste exercício, queremos deixar a nuvem de _tags_ (elemento `#tags`)
-grudenta, de forma que, quando a página rolar, ela acompanhe a
+grudenta, de forma que, quando a página for rolada, ela acompanhe a
 rolagem. Isso pode ser feito facilmente com o posicionamento `sticky`.
-
+Pesquise na Internet como fazer isso.
 
 ## FAQ
 
@@ -253,41 +201,8 @@ rolagem. Isso pode ser feito facilmente com o posicionamento `sticky`.
    ```html
    <script src="caminho-para-arquivo.js"></script>
    ```
-1. Mudei umas _tags_ de `<div>` para semântica e, de repente, **o conteúdo
-   principal da página sumiu**. Por quê?
-   - Isso aconteceu por causa do pequeno código JavaScript que tem ao final
-     `<body>`.
-   - Veja algumas linhas do arquivo `index.html`:
-     ```html
-     <script>
-       // faz o vídeo desaparecer de leve assim que terminar
-       let tempo = 11000;  // 11s, duração do vídeo
-       setTimeout(() => {
-           // LINHA A: faz o vídeo desaparecer colocando a classe .desaparecido
-           document.querySelector('.backdrop').classList.add('desaparecido');
-           // LINHA B: faz o conteúdo principal surgir, retirando a classe .desaparecido
-           document.querySelector('#conteudo-principal').classList.remove('desaparecido');
-       }, tempo);
-       // ...
-     </script>
-     ```
-     - A "linha B" vai dar erro se não existir um elemento na página com um
-       `id="conteudo-principal"`
-       - Se você tiver removido o `id` desse elemento, uma opção é colocá-lo
-         de volta
-       - Outra opção é alterar a "linha B" para selecionar o elemento que tinha
-         o `id="conteudo-principal"` a partir do nome de sua _tag_
-         - Para isso, você pode usar o comando em JavaScript:
-           ```js
-           // LINHA B
-           document.querySelector('NOME_DA_TAG').classList.remove('desaparecido');
-           ```
 
 
-[tags-semanticas]: https://willsallum.github.io/cefet_web/classes/html4/#elementos-sem%C3%A2nticos-13
-[lista-horizontal]: https://willsallum.github.io/cefet_web/classes/html4/#transformando-uma-lista-em-um-menu
-[propriedade-display]: https://willsallum.github.io/cefet_web/classes/css2/#a-propriedade-display
-[pseudo-coisas]: https://willsallum.github.io/cefet_web/classes/html4/#pseudo-classes-e-pseudo-elements
-[propriedade-position]: https://willsallum.github.io/cefet_web/classes/css2/#limita%C3%A7%C3%B5es-do-fluxo-padr%C3%A3o
-[slides-box-model]: https://willsallum.github.io/cefet_web/classes/html4/#o-box-model
-[entrada-e-botoes]: https://willsallum.github.io/cefet_web/classes/html4#intera%C3%A7%C3%A3o-livre-com-usu%C3%A1rio
+
+
+[propriedade-position]: https://fegemo.github.io/cefet-front-end/classes/css4/#valores-position
